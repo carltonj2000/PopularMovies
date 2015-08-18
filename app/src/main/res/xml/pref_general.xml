@@ -1,0 +1,21 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditTextPreference
+        android:key="@string/pref_api_key_key"
+        android:title="@string/pref_api_key"
+        android:defaultValue="@string/pref_api_key_default"
+        android:selectAllOnFocus="true"
+        android:inputType="text"
+        android:singleLine="true"
+        android:maxLines="1" />
+
+    <ListPreference
+        android:key="@string/pref_movie_sort_order_list_key"
+        android:title="@string/pref_sort_movies_by"
+        android:defaultValue="@string/pref_sort_movies_by_default_pop"
+        android:entries="@array/pref_list_sort_movies_by"
+        android:entryValues="@array/pref_list_sort_movies_by_values"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null" />
+
+</PreferenceScreen>

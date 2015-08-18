@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.apps4tracking.popularmovies.MovieDetailsActivityFragment">
+
+    <TextView
+        android:id="@+id/original_title"
+        android:text="@string/default_original_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/original_title_font"
+        android:paddingTop="@dimen/original_title_vertical_padding"
+        android:paddingBottom="@dimen/original_title_vertical_padding"
+        android:paddingStart="@dimen/original_title_horizontal_padding"
+        android:paddingLeft="@dimen/original_title_horizontal_padding"
+        android:background="@android:color/holo_blue_light"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:id="@+id/poster_path"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="40"
+                    android:src="@drawable/no_image"
+                    />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:paddingTop="@dimen/activity_vertical_margin"
+                    android:paddingBottom="@dimen/activity_vertical_margin"
+                    android:layout_weight="60"
+                    >
+
+                    <TextView
+                        android:id="@+id/release_date"
+                        android:text="@string/default_release_date"
+                        android:textSize="@dimen/release_date_font"
+                        android:layout_marginTop="@dimen/release_date_vertical_margin_land"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        />
+
+                    <TextView
+                        android:id="@+id/vote_average"
+                        android:text="@string/default_vote_average"
+                        android:textSize="@dimen/vote_average_font"
+                        android:layout_marginTop="@dimen/vote_average_vertical_margin_land"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        />
+
+                    <TextView
+                        android:id="@+id/overview"
+                        android:text="@string/default_overview"
+                        android:textSize="@dimen/overview_font"
+                        android:layout_marginTop="@dimen/overview_vertical_margin_land"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

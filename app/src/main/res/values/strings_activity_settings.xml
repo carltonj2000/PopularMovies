@@ -1,0 +1,23 @@
+<resources>
+    <string name="title_activity_settings">Settings</string>
+
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_sort_movies_by">Sort Movies By</string>
+    <string name="pref_sort_movies_by_default_pop">0</string>
+    <string-array name="pref_list_sort_movies_by">
+        <item>Most Popular</item>
+        <item>Highest Rated</item>
+    </string-array>
+    <string-array name="pref_list_sort_movies_by_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <string name="pref_api_key">API Key</string>
+    <string name="pref_api_key_default"></string>
+
+    <string name="pref_api_key_key">pref_api_key_key</string>
+    <string name="pref_movie_sort_order_list_key">pref_movie_sort_order_list_key</string>
+
+</resources>
